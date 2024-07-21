@@ -1,144 +1,1417 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from azzle.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jun 2024 10:28:32 GMT -->
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparkxela</title>
+    <meta name="description" content="AIMass Tailwind based SASS Template" />
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
+    <!-- Favicon  -->
+       <link rel="icon"  href="/img/logo.ico" /> 
 
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
+    <!-- Site font -->
+    <link href="assets/fonts/fonts.css" rel="stylesheet" />
 
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/jos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/menu.css" />
 
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
-#siteNavigation .current { background-color: #ccd; }
+    <!-- Development css -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
+    <!-- Production css -->
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+  </head>
 
+  <body>
+    <div class="page-wrapper relative z-[1] bg-white">
+      <!--...::: Header Start :::... -->
+      <header
+        class="site-header site-header--absolute is--white py-3"
+        id="sticky-menu"
+      >
+        <div class="global-container">
+          <div class="flex items-center justify-between gap-x-8">
+            <!-- Header Logo -->
+            <a class href="index.html">
+              <img
+                src="assets/img/sparkxela_logo-transparent (1).png"
+                alt="AIMass"
+                width="96"
+                height="24"
+              />
+            </a>
+            <!-- Header Logo -->
 
-a:link    { text-decoration: underline;  color: #00f; }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
+            <!-- Header Navigation -->
+            <div class="menu-block-wrapper">
+              <div class="menu-overlay"></div>
+              <nav class="menu-block" id="append-menu-header">
+                <div class="mobile-menu-head">
+                  <div class="go-back">
+                    <img
+                      class="dropdown-icon"
+                      src="assets/img/icon-black-long-arrow-right.svg"
+                      alt="cheveron-right"
+                      width="16"
+                      height="16"
+                    />
+                  </div>
+                  <div class="current-menu-title"></div>
+                  <div class="mobile-menu-close">&times;</div>
+                </div>
+                <ul class="site-menu-main" style="color: white;">
+                
+                  <li class="nav-item nav-item-has-children">
+                    <a href="#" class="nav-link-item drop-trigger"
+                      >Services
+                      <img
+                        class="dropdown-icon"
+                        src="assets/img/icon-black-cheveron-right.svg"
+                        alt="cheveron-right"
+                        width="16"
+                        height="16"
+                    /></a>
+                    <ul class="sub-menu" id="submenu-2">
+                      <li class="sub-menu--item">
+                        <a href="services.html">Services</a>
+                      </li>
+                      <!-- <li class="sub-menu--item">
+                        <a href="service-details.html">Service Details</a>
+                      </li> -->
+                    </ul>
+                  </li>
+                  <li class="nav-item nav-item-has-children">
+                    <a href="#" class="nav-link-item drop-trigger"
+                      >Pages
+                      <img
+                        class="dropdown-icon"
+                        src="assets/img/icon-black-cheveron-right.svg"
+                        alt="cheveron-right"
+                        width="16"
+                        height="16"
+                    /></a>
+                    <ul class="sub-menu" id="submenu-3">
+                      <li class="sub-menu--item nav-item-has-children">
+                        <a
+                          href="portfolio.html"
+                          data-menu-get="h3"
+                          class="drop-trigger"
+                          >Portfolio
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link-item" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <!-- Header Navigation -->
 
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
+            <!-- Header User Event -->
+            <div class="flex items-center gap-6">
+              <!-- Responsive Offcanvas Menu Button -->
+              <div class="block lg:hidden">
+                <button id="openBtn" class="hamburger-menu mobile-menu-trigger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+            <!-- Header User Event -->
+          </div>
+        </div>
+      </header>
+      <!--...::: Header End :::... -->
 
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
+      <main class="main-wrapper relative overflow-hidden">
+        <!--...::: Hero Section Start :::... -->
+        <section id="hero-section">
+          <div class="relative overflow-hidden bg-black text-white">
+            <!-- Section Spacer -->
+            <div
+              class="pb-28 pt-28 md:pb-40 lg:pt-28 xl:pb-[90px] xl:pt-[122px]"
+            >
+              <!-- Section Container -->
+              <div class="global-container">
+                <div
+                  class="grid grid-cols-1 items-center gap-10 md:grid-cols-[minmax(0,_1fr)_0.7fr]"
+                >
+                  <!-- Hero Content -->
+                  <div>
+                    <h1
+                      class="jos mb-6 max-w-md break-words  text-5xl font-medium leading-none text-white md:max-w-full md:text-6xl lg:text-7xl xl:text-8xl xxl:text-[90px]"
+                    style="line-height: 5rem;"
+                    >
+                    Ignite innovation and Empower your business with SparkXela
+                    </h1>
+                    
+                    <p class="jos mb-11">
+                      We revolutionize businesses with cutting-edge IT solutions. Our skilled team leverages technology to drive innovation and enhance efficiency. Discover the future of your business with SparkXela&apos;s transformative expertise.
+                    </p>
+                    <a
+                      href="/contact"
+                      class="jos button relative z-[1] inline-flex items-center gap-3 rounded-[50px] border-none bg-colorViolet py-[18px] text-white after:bg-colorOrangyRed hover:text-white"
+                      >Build you solution
+                      <img
+                        src="assets/img/th-2/icon-white-long-arrow-right.svg"
+                        alt="icon-white-long-arrow-right"
+                    /></a>
+                  </div>
+                  <!-- Hero Content -->
+                  <!-- Hero Image -->
+                  <div
+                    class="hero-img animate-pulse overflow-hidden rounded-2xl bg-black text-right"
+                  >
+                    <img
+                      src="assets/img/th-2/hero-img-2.png"
+                      alt="hero-img-2"
+                      width="1296"
+                      height="600"
+                      class="h-auto w-full"
+                    />
+                  </div>
+                  <!-- Hero Image -->
+                </div>
+              </div>
+              <!-- Section Container -->
+            </div>
+            <!-- Section Spacer -->
 
+            <!-- Background Gradient -->
+            <div
+              class="absolute left-1/2 top-[80%] h-[1280px] w-[1280px] -translate-x-1/2 rounded-full bg-gradient-to-t from-[#5636C7] to-[#5028DD] blur-[250px]"
+            ></div>
+            <div
+              class="absolute bottom-0 left-1/2 h-[77px] w-full -translate-x-1/2 bg-[url(../img/th-2/arc-top-shape-1.svg)] bg-cover bg-center bg-no-repeat"
+            ></div>
+          </div>
+        </section>
+      
+        <!--...::: Hero Section End :::... -->
 
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+        <!--...::: Service Section Start :::... -->
+        <section id="section-service">
+          <!-- Section Spacer -->
+          <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+            <!-- Section Container -->
+            <div class="global-container">
+              <!-- Section Content Block -->
+              <div class="jos mb-10 lg:mb-16 xl:mb-20">
+                <div class="md:max-w-sm lg:max-w-xl xl:max-w-[746px]">
+                  <h2>Core features that make it valuable</h2>
+                </div>
+              </div>
+              <!-- Section Content Block -->
+              <!-- Service List -->
+              <ul
+                class="jos grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4"
+              >
+                <!-- Service Item -->
+                <li
+                  class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+                >
+                  <div class="relative mb-9 h-[70px] w-[70px]">
+                    <img
+                      src="assets/img/th-1/service-icon-black-1.svg"
+                      alt=""
+                      width="70"
+                      height="70"
+                    />
+                    <img
+                      src="assets/img/th-1/service-icon-orange-1.svg"
+                      alt="service-icon-orange-1"
+                      width="70"
+                      height="70"
+                      class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </div>
+                  <h3
+                    class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]"
+                  >
+                    <a class="hover:text-colorOrangyRed">
+                      Software Development
+                    </a>
+                  </h3>
 
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+                  <h5 class="text-xl">
+                    <p class="mb-8 duration-300 text-xl group-hover:text-white">
+                      Transforming Ideas into Digital Realities
+                    </p>
+                  </h5>
 
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+                  <p class="mb-12 duration-300 group-hover:text-white">
+                    Custom software solutions tailored to your business needs,
+                    delivering innovative, scalable, and high-quality
+                    applications for web and mobile.
+                  </p>
+                </li>
+                <!-- Service Item -->
+                <!-- Service Item -->
+                <li
+                  class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+                >
+                  <div class="relative mb-9 h-[70px] w-[70px]">
+                    <img
+                      src="assets/img/th-1/service-icon-black-2.svg"
+                      alt="service-icon-black-2"
+                      width="70"
+                      height="70"
+                    />
+                    <img
+                      src="assets/img/th-1/service-icon-orange-2.svg"
+                      alt="service-icon-orange-1"
+                      width="70"
+                      height="70"
+                      class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </div>
 
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
+                  <h3
+                    class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]"
+                  >
+                    <a
+                      class="hover:text-colorOrangyRed"
+                      href="service-details.html"
+                    >
+                      UI/UX Design
+                    </a>
+                  </h3>
 
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
+                  <h5 class="text-xl">
+                    <p class="mb-8 duration-300 text-xl group-hover:text-white">
+                      Crafting Exceptional User Experiences
+                    </p>
+                  </h5>
 
+                  <p class="mb-12 duration-300 group-hover:text-white">
+                    Designing intuitive, engaging, and visually appealing
+                    interfaces that prioritize user experience and satisfaction,
+                    enhancing overall usability.
+                  </p>
+                  <!-- Features Item -->
+                  <!-- Features Item -->
+                </li>
+                <!-- Service Item -->
+                <!-- Service Item -->
+                <li
+                  class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+                >
+                  <div class="relative mb-9 h-[70px] w-[70px]">
+                    <img
+                      src="assets/img/th-1/service-icon-black-3.svg"
+                      alt="service-icon-black-3"
+                      width="70"
+                      height="70"
+                    />
+                    <img
+                      src="assets/img/th-1/service-icon-orange-3.svg"
+                      alt="service-icon-orange-3"
+                      width="70"
+                      height="70"
+                      class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </div>
+                  <h3
+                    class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]"
+                  >
+                    <a
+                      class="hover:text-colorOrangyRed"
+                      href="service-details.html"
+                    >
+                      Cybersecurity Solutions
+                    </a>
+                  </h3>
 
-// -->
-</style>
+                  <h5 class="text-xl">
+                    <p class="mb-8 duration-300 text-xl group-hover:text-white">
+                      Securing Your Digital Frontier
+                    </p>
+                  </h5>
 
-</head>
+                  <p class="mb-12 duration-300 group-hover:text-white">
+                    Comprehensive cybersecurity services, protecting your
+                    digital assets with advanced security measures,
+                    vulnerability assessments, and incident response.
+                  </p>
+                </li>
+                <!-- Service Item -->
+                <!-- Service Item -->
+                <li
+                  class="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black"
+                >
+                  <div class="relative mb-9 h-[70px] w-[70px]">
+                    <img
+                      src="assets/img/th-1/service-icon-black-4.svg"
+                      alt="service-icon-black-4"
+                      width="70"
+                      height="70"
+                    />
+                    <img
+                      src="assets/img/th-1/service-icon-orange-4.svg"
+                      alt="service-icon-orange-4"
+                      width="70"
+                      height="70"
+                      class="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </div>
+                  <h3
+                    class="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]"
+                  >
+                    <a
+                      class="hover:text-colorOrangyRed"
+                      href="service-details.html"
+                    >
+                      IT Consulting and Strategy
+                    </a>
+                  </h3>
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
+                  <h5 class="text-xl">
+                    <p class="mb-8 duration-300 text-xl group-hover:text-white">
+                      Guiding Your Digital Transformation
+                    </p>
+                  </h5>
 
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="azzle.netlify.app/index.html">
-						Azzle - AI Technology & Startup HTML Template
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=azzle.netlify.app/index.html">
+                  <p class="mb-12 duration-300 group-hover:text-white">
+                    Expert IT consulting to optimize your infrastructure,
+                    improve efficiency, and strategically guide your digital
+                    transformation initiatives.
+                  </p>
+                </li>
+                <!-- Service Item -->
+              </ul>
+              <!-- Service List -->
+            </div>
+            <!-- Section Container -->
+          </div>
+          <!-- Section Spacer -->
+        </section>
+        <!--...::: Service Section End :::... -->
 
+        <!--...::: Content Section Start :::... -->
+        <section id="content-section-1">
+          <!-- Section Spacer -->
+          <div class="pb-20 xl:pb-[150px]">
+            <!-- Section Container -->
+            <div class="global-container">
+              <div
+                class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32"
+              >
+                <!-- Content Left Block -->
+                <div
+                  class="jos order-2 overflow-hidden rounded-md md:order-1"
+                  data-jos_animation="fade-left"
+                >
+                  <img
+                    src="./img/home1.jpg"
+                    alt="content-image-1"
+                    width="526"
+                    height="450"
+                    class="h-auto w-full"
+                  />
+                </div>
+                <!-- Content Left Block -->
+                <!-- Content Right Block -->
+                <div
+                  class="jos order-1 md:order-2"
+                  data-jos_animation="fade-right"
+                >
+                  <!-- Section Content Block -->
+                  <div class="mb-6">
+                    <h2>Discovery & Analysis</h2>
+                  </div>
+                  <!-- Section Content Block -->
+                  <div class="text-lg leading-[1.4] lg:text-[21px]">
+                    <p class="mb-7 last:mb-0">
+                      We begin with an in-depth discovery phase, analyzing your business needs and goals. Our experts conduct thorough research to understand your challenges and identify opportunities for impactful solutions.
+                    </p>
+                    
+                  </div>
+                </div>
+                <!-- Content Right Block -->
+              </div>
+            </div>
+            <!-- Section Container -->
+          </div>
+          <!-- Section Spacer -->
+        </section>
+        <!--...::: Content Section End :::... -->
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
+        <!--...::: Content Section Start :::... -->
+        <section id="content-section-2">
+          <!-- Section Spacer -->
+          <div class="pb-20 xl:pb-[150px]">
+            <!-- Section Container -->
+            <div class="global-container">
+              <div
+                class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32"
+              >
+                <!-- Content Left Block -->
+                <div
+                  class="jos order-2 overflow-hidden rounded-md"
+                  data-jos_animation="fade-left"
+                >
+                  <img
+                  src="./img/home2.jpg"
+                    alt="content-image-2"
+                    width="526"
+                    height="450"
+                    class="h-auto w-full"
+                  />
+                </div>
+                <!-- Content Left Block -->
+                <!-- Content Right Block -->
+                <div class="jos order-1" data-jos_animation="fade-right">
+                  <!-- Section Content Block -->
+                  <div class="mb-6">
+                    <h2>Strategic Planning</h2>
+                  </div>
+                  <!-- Section Content Block -->
+                  <div class="text-lg leading-[1.4] lg:text-[21px]">
+                    <p class="mb-7 last:mb-0">
+                      Our team crafts a detailed strategy, outlining a tailored approach to address your needs. We design a roadmap that ensures alignment with your objectives and sets the stage for successful implementation.
+                    </p>
+                    <!-- <ul
+                      class="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]"
+                    >
+                      <li class="flex items-start gap-x-3">
+                        <div class="mt-[2.5px] h-[30px] w-[30px]">
+                          <img
+                            src="assets/img/th-1/check-circle.svg"
+                            alt="check-circle"
+                            width="30"
+                            height="30"
+                            class="h-full w-full"
+                          />
+                        </div>
+                        Ready-to-use AI capabilities system
+                      </li>
+                      <li class="flex items-start gap-x-3">
+                        <div class="mt-[2.5px] h-[30px] w-[30px]">
+                          <img
+                            src="assets/img/th-1/check-circle.svg"
+                            alt="check-circle"
+                            width="30"
+                            height="30"
+                            class="h-full w-full"
+                          />
+                        </div>
+                        Users can quickly integrate AI features
+                      </li>
+                      <li class="flex items-start gap-x-3">
+                        <div class="mt-[2.5px] h-[30px] w-[30px]">
+                          <img
+                            src="assets/img/th-1/check-circle.svg"
+                            alt="check-circle"
+                            width="30"
+                            height="30"
+                            class="h-full w-full"
+                          />
+                        </div>
+                        Time savings translate to cost savings
+                      </li>
+                    </ul> -->
+                  </div>
+                </div>
+                
+                <!-- Content Right Block -->
+              </div>
+            </div>
+            <!-- Section Container -->
+          </div>
+          <!-- Section Spacer -->
+        </section>
+        <section id="content-section-1">
+          <!-- Section Spacer -->
+          <div class="pb-20 xl:pb-[150px]">
+            <!-- Section Container -->
+            <div class="global-container">
+              <div
+                class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32"
+              >
+                <!-- Content Left Block -->
+                <div
+                  class="jos order-2 overflow-hidden rounded-md md:order-1 "
+                  data-jos_animation="fade-left"
+                >
+                  <img
+                    src="./img/home3.jpg"
+                    alt="content-image-1"
+                    width="526"
+                    height="450"
+                    class="h-full w-full"
+                  />
+                </div>
+                <!-- Content Left Block -->
+                <!-- Content Right Block -->
+                <div
+                  class="jos order-1 md:order-2"
+                  data-jos_animation="fade-right"
+                >
+                  <!-- Section Content Block -->
+                  <div class="mb-6">
+                    <h2>Development & Implementation</h2>
+                  </div>
+                  <!-- Section Content Block -->
+                  <div class="text-lg leading-[1.4] lg:text-[21px]">
+                    <p class="mb-7 last:mb-0">
+                      We develop and implement custom solutions with precision and agility. Leveraging the latest technologies, we create robust applications and systems that drive efficiency and innovation within your organization.
 
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
+                    </p>
+                    
+                  </div>
+                </div>
+                <!-- Content Right Block -->
+              </div>
+            </div>
+            <!-- Section Container -->
+          </div>
+          <!-- Section Spacer -->
+        </section>
+        <!--...::: Content Section End :::... -->
 
-</body>
+        <!--...::: Content Section Start :::... -->
+        <section id="content-section-2">
+          <!-- Section Spacer -->
+          <div class="pb-20 xl:pb-[150px]">
+            <!-- Section Container -->
+            <div class="global-container">
+              <div
+                class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32"
+              >
+                <!-- Content Left Block -->
+                <div class="jos order-2 overflow-hidden rounded-md w-full h-full " data-jos_animation="fade-left">
+                  <img
+                    src="./img/home4.jpg"
+                    alt="content-image-2"
+                    class="h-auto w-full max-w-[800px] max-h-[600px]"
+                    style="object-fit: cover;"
+                  />
+                </div>
+                <!-- Content Left Block -->
+                <!-- Content Right Block -->
+                <div class="jos order-1" data-jos_animation="fade-right">
+                  <!-- Section Content Block -->
+                  <div class="mb-6">
+                    <h2>Testing & Optimization</h2>
+                  </div>
+                  <!-- Section Content Block -->
+                  <div class="text-lg leading-[1.4] lg:text-[21px]">
+                    <p class="mb-7 last:mb-0">
+                      We rigorously test and refine our solutions to ensure optimal performance and reliability. Continuous feedback and optimization guarantee that our deliverables meet the highest standards and exceed your expectations. </p>
+                    <!-- <ul
+                      class="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]"
+                    >
+                      <li class="flex items-start gap-x-3">
+                        <div class="mt-[2.5px] h-[30px] w-[30px]">
+                          <img
+                            src="assets/img/th-1/check-circle.svg"
+                            alt="check-circle"
+                            width="30"
+                            height="30"
+                            class="h-full w-full"
+                          />
+                        </div>
+                        Ready-to-use AI capabilities system
+                      </li>
+                      <li class="flex items-start gap-x-3">
+                        <div class="mt-[2.5px] h-[30px] w-[30px]">
+                          <img
+                            src="assets/img/th-1/check-circle.svg"
+                            alt="check-circle"
+                            width="30"
+                            height="30"
+                            class="h-full w-full"
+                          />
+                        </div>
+                        Users can quickly integrate AI features
+                      </li>
+                      <li class="flex items-start gap-x-3">
+                        <div class="mt-[2.5px] h-[30px] w-[30px]">
+                          <img
+                            src="assets/img/th-1/check-circle.svg"
+                            alt="check-circle"
+                            width="30"
+                            height="30"
+                            class="h-full w-full"
+                          />
+                        </div>
+                        Time savings translate to cost savings
+                      </li>
+                    </ul> -->
+                  </div>
+                </div>
+                
+                <!-- Content Right Block -->
+              </div>
+            </div>
+            <!-- Section Container -->
+          </div>
+          <!-- Section Spacer -->
+        </section>
+        <!--...::: Content Section End :::... -->
 
+        <!--...::: Funfact Section Start :::... -->
+        <section id="funfact-section">
+          <div class="mx-auto max-w-[1500px] px-5">
+            <div
+              class="jos grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]"
+            >
+              <!-- Funfact Left Block -->
+              <div
+                class="relative overflow-hidden rounded-[30px] lg:rounded-[50px]"
+              >
+                <img
+                  src="assets/img/th-1/funfact-image.jpg"
+                  alt="funfact-image"
+                  width="721"
+                  height="784"
+                  class="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full"
+                />
+                <!-- Video Play Button -->
+                <a
+                  data-fslightbox="gallery"
+                  href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
+                  class="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2"
+                >
+                  <div
+                    class="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-colorOrangyRed hover:text-white"
+                  >
+                    Play
+                    <div
+                      class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30"
+                    ></div>
+                  </div>
+                </a>
+                <!-- Video Play Button -->
+              </div>
+              <!-- Funfacct Left Block -->
+
+              <!-- Funfact Right Block -->
+              <div
+                class="self-center px-6 py-16 sm:py-20 md:px-16 xl:px-10 xl:py-24 xxl:py-32 xxl:pl-16 xxl:pr-28"
+              >
+                <!-- Section Content Block -->
+                <div class="mb-8 lg:mb-16 xl:mb-6">
+                  <h3 class="text-white" style="font-size: 60px;">Optimized IT Solutions for Your Growing Needs
+                  </h3>
+                </div>
+                <!-- Section Content Block -->
+                <div
+                  class="text-left text-lg leading-[1.4] text-white lg:text-[21px]"
+                >
+                  <p class="mb-7 last:mb-0">
+                    As your business evolves, so do your IT requirements. Our IT solutions offer flexibility and scalability to adapt to your changing needs, ensuring your technology remains a valuable asset.
+
+                  </p>
+                </div>
+                <!-- Horizontal Separator -->
+                <div class="my-14 h-[1px] w-full bg-colorCodGray"></div>
+                <!-- Counter Scroll -->
+                <ul
+                  class="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left xxl:gap-x-20"
+                >
+                  <!-- Counter Items -->
+                  <li>
+                    <h3
+                      class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]"
+                      data-module="countup"
+                    >
+                      <span class="start-number" data-countup-number="200"
+                        >200</span
+                      >+
+                    </h3>
+                    <span
+                      class="block text-lg font-normal text-white lg:text-[21px]"
+                    >
+                      Client service inquiries
+                    </span>
+                  </li>
+                  <!-- Counter Items -->
+                  <!-- Counter Items -->
+                  <li>
+                    <h3
+                      class="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]"
+                      data-module="countup"
+                    >
+                      <span class="start-number" data-countup-number="15"
+                        >15</span
+                      >+
+                    </h3>
+                    <span
+                      class="block text-lg font-normal text-white lg:text-[21px]"
+                    >
+                      Projects
+                    </span>
+                  </li>
+                  <!-- Counter Items -->
+                </ul>
+                <!-- Counter Scroll -->
+              </div>
+              <!-- Funfact Right Block -->
+            </div>
+          </div>
+        </section>
+        <!--...::: Funfact Section End :::... -->
+
+        <!--...::: Pricing Section Start :::... -->
+        <section class="pricing-section">
+          <!-- Section Spacer -->
+          <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+            <!-- Section Container -->
+            <div class="global-container">
+              <!-- Section Content Block -->
+              <div class="jos mb-10 text-center lg:mb-12">
+                <div class="mx-auto md:max-w-xs lg:max-w-xl xl:max-w-[746px]">
+                  <h2>Cost-effectively build any software</h2>
+                </div>
+              </div>
+              <!-- Section Content Block -->
+
+              <!-- Improved Contact Us Button -->
+              <div class="container mx-auto">
+                <!-- Tab buttons -->
+                <div class="jos flex justify-center" data-jos_animation="fade">
+                  <a href="contact.html">
+                    <button
+                      class="contact-button py-4 px-6 rounded-[50px] border-2 border-black font-semibold transition-all duration-300 ease-in-out hover:bg-black hover:text-white hover:shadow-lg"
+                    >
+                      Contact Us
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Section Container -->
+          </div>
+          <!-- Section Spacer -->
+        </section>
+        <!--...::: Pricing Section End :::... -->
+
+        <!--...::: FAQ Section Start :::... -->
+        <section class="faq-section">
+          <!-- Section Spacer -->
+          <div class="pb-20 xl:pb-[150px]">
+            <!-- Section Container -->
+            <div class="global-container">
+              <div class="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+                <!-- FAQ Left Block -->
+                <div class="jos flex flex-col" data-jos_animation="fade-right">
+                  <!-- Section Content Block -->
+                  <div class="mb-6">
+                    <div class="mx-auto md:mx-0 md:max-w-none">
+                      <h2>Got Questions? We’re Here to Help!</h2>
+                    </div>
+                  </div>
+                  <!-- Section Content Block -->
+                  <div class="text-lg leading-[1.4] lg:text-[21px]">
+                    <p class="mb-7 last:mb-0">
+                      Have any doubts or need more information? Our dedicated team of data analysts, researchers, and developers is ready to answer your questions and provide clarity on our services. Reach out to us anytime, and we'll ensure you have all the information you need to make informed decisions.
+                    </p>
+                    <a
+                      class="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                      href="/contact.html"
+                      >Ask you questions</a
+                    >
+                  </div>
+                </div>
+                <!-- FAQ Left Block -->
+
+                <!-- FAQ Right Block -->
+                <div
+                  class="jos md:ml-10 lg:ml-20 xl:ml-32"
+                  data-jos_animation="fade-left"
+                >
+                  <!-- Accordion-->
+                  <ul class="accordion">
+                    <!-- Accordion items -->
+                    <li
+                      class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 active"
+                    >
+                      <div
+                        class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]"
+                      >
+                        <p>What types of IT solutions do you provide?</p>
+                        <div class="accordion-icon">
+                          <img src="assets/img/plus.svg" alt="plus" />
+                        </div>
+                      </div>
+                      <div class="accordion-content text-[#2C2C2C]">
+                        <p>
+                          We offer a range of IT solutions including custom software development, IT Strategy Consulting,IT Performance Monitoring,IT Budget Planning and Management cybersecurity services, to meet your unique business needs.
+
+                        </p>
+                      </div>
+                    </li>
+                    <!-- Accordion items -->
+                    <!-- Accordion items -->
+                    <li
+                      class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0"
+                    >
+                      <div
+                        class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]"
+                      >
+                        <p>How do you ensure the quality of your development projects? </p>
+                        <div class="accordion-icon">
+                          <img src="assets/img/plus.svg" alt="plus" />
+                        </div>
+                      </div>
+                      <div class="accordion-content text-[#2C2C2C]">
+                        <p>
+                          Our dedicated team employs rigorous testing and optimization processes, including detailed quality assurance and feedback loops, to ensure our solutions meet high standards and deliver exceptional performance.
+
+                        </p>
+                      </div>
+                    </li>
+                    <!-- Accordion items -->
+                    <!-- Accordion items -->
+                    <li
+                      class="accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0"
+                    >
+                      <div
+                        class="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]"
+                      >
+                        <p>What is your process for understanding client requirements?</p>
+                        <div class="accordion-icon">
+                          <img src="assets/img/plus.svg" alt="plus" />
+                        </div>
+                      </div>
+                      <div class="accordion-content text-[#2C2C2C]">
+                        <p>
+                          We begin with a comprehensive discovery phase, where our team of data analysts, researchers, and developers thoroughly analyzes your needs to design tailored solutions aligned with your business goals.
+
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- Accordion-->
+                </div>
+                <!-- FAQ Right Block -->
+              </div>
+            </div>
+            <!-- Section Container -->
+          </div>
+          <!-- Section Spacer -->
+        </section>
+        <!--...::: FAQ Section End :::... -->
+
+        <!--...::: Testimonial Section Start :::... -->
+        <!-- <section class="testimonial-section">
+          <Section Spacer -->
+          <div class=" pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
+            <!-- Section Container -->
+            <!-- <div class="global-container">
+              Section Content Block -->
+              <!-- <div class="jos mb-10 text-center lg:mb-16 xl:mb-20">
+                <div
+                  class="mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]"
+                >
+                  <h2 class="text-white">Positive feedback from our users</h2>
+                </div>
+              </div> -->
+              <!-- Section Content Block -->
+
+              <!-- Testimonial List -->
+              <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Testimonial Item -->
+                <!-- <div
+                  class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
+                  data-jos_animation="fade-left"
+                  data-jos_delay="0.1"
+                >
+                  <div class="block">
+                    <img
+                      src="assets/img/th-1/rating.svg"
+                      alt="rating"
+                      width="146"
+                      height="25"
+                    />
+                  </div>
+                  <p>
+                    “This AI SaaS tool has revolutionized the way we process and
+                    analyze data. This is a game-changer for our business.”
+                  </p>
+                  <div class="flex items-center gap-x-4">
+                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                      <img
+                        src="assets/img/th-1/testimonial-img-1.jpg"
+                        alt="testimonial-img"
+                        width="60"
+                        height="60"
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <span class="block text-lg font-semibold leading-[1.6]">
+                        Max Weber
+                      </span>
+                      <span class="block text-sm font-light leading-[1.4]">
+                        HR Manager
+                      </span>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Testimonial Item -->
+                <!-- Testimonial Item -->
+                <!-- <div
+                  class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
+                  data-jos_animation="fade-left"
+                  data-jos_delay="0.2"
+                >
+                  <div class="block">
+                    <img
+                      src="assets/img/th-1/rating.svg"
+                      alt="rating"
+                      width="146"
+                      height="25"
+                    />
+                  </div>
+                  <p>
+                    "It answers immediately, and we've seen a significant
+                    reduction in response time. Our customers love it and so do
+                    we!"
+                  </p>
+                  <div class="flex items-center gap-x-4">
+                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                      <img
+                        src="assets/img/th-1/testimonial-img-2.jpg"
+                        alt="testimonial-img"
+                        width="60"
+                        height="60"
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <span class="block text-lg font-semibold leading-[1.6]">
+                        Douglas Smith
+                      </span>
+                      <span class="block text-sm font-light leading-[1.4]">
+                        Businessman
+                      </span>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Testimonial Item -->
+                <!-- Testimonial Item -->
+                <!-- <div
+                  class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
+                  data-jos_animation="fade-left"
+                  data-jos_delay="0.3"
+                >
+                  <div class="block">
+                    <img
+                      src="assets/img/th-1/rating.svg"
+                      alt="rating"
+                      width="146"
+                      height="25"
+                    />
+                  </div>
+                  <p>
+                    "It is accurate, fast and supports multiple languages
+                    support. It is a must for any international business
+                    success."
+                  </p>
+                  <div class="flex items-center gap-x-4">
+                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                      <img
+                        src="assets/img/th-1/testimonial-img-3.jpg"
+                        alt="testimonial-img"
+                        width="60"
+                        height="60"
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <span class="block text-lg font-semibold leading-[1.6]">
+                        Abraham Maslo
+                      </span>
+                      <span class="block text-sm font-light leading-[1.4]">
+                        Founder @ Marketing Company
+                      </span>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Testimonial Item -->
+                <!-- Testimonial Item -->
+                <!-- <div
+                  class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
+                  data-jos_animation="fade-right"
+                  data-jos_delay="0.1"
+                >
+                  <div class="block">
+                    <img
+                      src="assets/img/th-1/rating.svg"
+                      alt="rating"
+                      width="146"
+                      height="25"
+                    />
+                  </div>
+                  <p>
+                    "Security is a top concern for us, and AI SaaS takes it
+                    seriously. It's a reassuring layer of protection for our
+                    organization."
+                  </p>
+                  <div class="flex items-center gap-x-4">
+                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                      <img
+                        src="assets/img/th-1/testimonial-img-4.jpg"
+                        alt="testimonial-img"
+                        width="60"
+                        height="60"
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <span class="block text-lg font-semibold leading-[1.6]">
+                        Jack Fayol
+                      </span>
+                      <span class="block text-sm font-light leading-[1.4]">
+                        HR Manager
+                      </span>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Testimonial Item -->
+                <!-- Testimonial Item -->
+                <!-- <div
+                  class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
+                  data-jos_animation="fade-right"
+                  data-jos_delay="0.2"
+                >
+                  <div class="block">
+                    <img
+                      src="assets/img/th-1/rating.svg"
+                      alt="rating"
+                      width="146"
+                      height="25"
+                    />
+                  </div>
+                  <p>
+                    "We were concerned about integrating their APIs were well
+                    documented, and their support team was super cool."
+                  </p>
+                  <div class="flex items-center gap-x-4">
+                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                      <img
+                        src="assets/img/th-1/testimonial-img-5.jpg"
+                        alt="testimonial-img"
+                        width="60"
+                        height="60"
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <span class="block text-lg font-semibold leading-[1.6]">
+                        Karen Lynn
+                      </span>
+                      <span class="block text-sm font-light leading-[1.4]">
+                        Software Engineer
+                      </span>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Testimonial Item -->
+                <!-- Testimonial Item -->
+                <!-- <div
+                  class="jos flex flex-col gap-y-8 rounded-[10px] border-[1px] border-colorCodGray p-[30px] text-white"
+                  data-jos_animation="fade-right"
+                  data-jos_delay="0.3"
+                >
+                  <div class="block">
+                    <img
+                      src="assets/img/th-1/rating.svg"
+                      alt="rating"
+                      width="146"
+                      height="25"
+                    />
+                  </div>
+                  <p>
+                    "The return on investment has exceeded our expectations.
+                    it's an investment in the future of our business."
+                  </p>
+                  <div class="flex items-center gap-x-4">
+                    <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
+                      <img
+                        src="assets/img/th-1/testimonial-img-6.jpg"
+                        alt="testimonial-img"
+                        width="60"
+                        height="60"
+                        class="h-full w-full object-cover object-center"
+                      />
+                    </div>
+                    <div class="flex flex-col gap-y-1">
+                      <span class="block text-lg font-semibold leading-[1.6]">
+                        Henry Ochi
+                      </span>
+                      <span class="block text-sm font-light leading-[1.4]">
+                        Bank Manager
+                      </span>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- Testimonial Item -->
+              </div>
+              <!-- Testimonial List -->
+            </div>
+            <!-- Section Container -->
+          </div>
+          <!-- Section Spacer -->
+        </section>
+        <!--...::: Testimonial Section Start :::... -->
+
+        <!-- Body Background Shape 1 -->
+        <div
+          class="orange-gradient-1 absolute -left-[15px] top-[61%] -z-[1] h-[400px] w-[400px] -rotate-[-9.022deg] rounded-[400px]"
+        ></div>
+
+        <!-- Body Background Shape 2 -->
+        <div
+          class="orange-gradient-2 absolute -left-[100px] top-[64%] -z-[1] h-[360px] w-[360px] -rotate-[-9.022deg] rounded-[360px]"
+        ></div>
+      </main>
+
+      <!--...::: Footer Section Start :::... -->
+      <footer
+        class="relative z-[1] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]"
+      >
+        <!-- Footer Top -->
+        <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+          <div class="overflow-hidden">
+            <!-- Footer Text Slider -->
+            <div
+              class="footer-text-slider flex w-full items-center gap-x-[30px] whitespace-nowrap"
+            >
+              <!-- Footer Slide Item  -->
+              <img
+                src="assets/img/th-1/footer-text-slider-icon.svg"
+                alt="footer-text-slider-icon"
+                width="60"
+                height="60"
+                class="h-10 w-10 lg:h-[60px] lg:w-[60px]"
+              />
+              <div
+                class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+              >
+                Start building software
+              </div>
+              <!-- Footer Slide Item  -->
+              <!-- Footer Slide Item  -->
+              <img
+                src="assets/img/th-1/footer-text-slider-icon.svg"
+                alt="footer-text-slider-icon"
+                width="60"
+                height="60"
+                class="h-10 w-10 lg:h-[60px] lg:w-[60px]"
+              />
+              <div
+                class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+              >
+                Start building software
+              </div>
+              <!-- Footer Slide Item  -->
+              <!-- Footer Slide Item  -->
+              <img
+                src="assets/img/th-1/footer-text-slider-icon.svg"
+                alt="footer-text-slider-icon"
+                width="60"
+                height="60"
+                class="h-10 w-10 lg:h-[60px] lg:w-[60px]"
+              />
+              <div
+                class="block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xxl:text-[80px]"
+              >
+                Start building software
+              </div>
+              <!-- Footer Slide Item  -->
+            </div>
+          </div>
+        </div>
+        <!-- Footer Text Slider End -->
+        <!-- Footer Top End -->
+        <div class="global-container">
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <!-- Footer Center -->
+          <div
+            class="grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]"
+          >
+            <!-- Footer Widget -->
+            <div>
+              <a href="index.html">
+                <img
+                  src="https://i.postimg.cc/pL5Z63f9/image.png"
+                  alt="logo"
+                  width="50"
+                  height="5"
+                  class=""
+                />
+              </a>
+              <div class="flex flex-col items-start">
+                <!-- <a href="index.html">
+                <img
+                  src="https://i.postimg.cc/pL5Z63f9/image.png"
+                  alt="logo"
+                  width="50"
+                  height="5"
+                  class=""
+                />
+              </a> -->
+                <p class="text-gray-700 max-w-[300px] mb-3">
+                  At SparkXela, we transform ideas into reality with innovative
+                  IT solutions. Our expert team is committed to enhancing your
+                  business's potential through advanced technology and
+                  personalized service. Let us ignite your journey towards
+                  unparalleled growth and efficiency. SparkXela: where
+                  innovation meets empowerment.
+                </p>
+                <p class="text-gray-700 max-w-[300px]">
+                  Website:
+                  <a
+                    href="mailto:sparkxela@badbusiness.in"
+                    class="text-colorOrangyRed transition-all duration-300 ease-linear hover:text-orange-500"
+                    >sparkxela@badbusiness.in</a
+                  >
+                </p>
+              </div>
+            </div>
+            <!-- Footer Widget End -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col items-start">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black mb-4">
+                Primary Pages
+              </h4>
+              <!-- Footer Title End -->
+
+              <!-- Footer Navbar -->
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="services.html"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <!-- Footer Navbar End -->
+            </div>
+            <!-- Footer Widget End -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col items-start">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black mb-4">
+                Utility Pages
+              </h4>
+              <!-- Footer Title End -->
+
+              <!-- Footer Navbar -->
+              <ul class="flex flex-col gap-y-[10px] capitalize">
+                <li>
+                  <a
+                    class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
+                    href="portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+               
+              </ul>
+              <!-- Footer Navbar End -->
+            </div>
+            <!-- Footer Widget End -->
+
+            <!-- Footer Widget -->
+            <div class="flex flex-col items-start">
+              <!-- Footer Title -->
+              <h4 class="text-[21px] font-semibold capitalize text-black mb-4">
+                Subscribe to our newsletter
+              </h4>
+              <!-- Footer Title End -->
+              <!-- Footer Subscriber Form -->
+              <form action="mailto:sparkxela@badbusiness.in" method="post">
+                <div class="relative h-[50px] max-w-[300px]">
+                  <input
+                    type="email"
+                    name="newsletter-email"
+                    id="newsletter-email"
+                    placeholder="Enter your email"
+                    class="py-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none transition-all duration-300 ease-linear hover:border-orange-500 focus:border-orange-500"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500"
+                  >
+                    <img
+                      src="assets/img/th-1/arrow-right-large.svg"
+                      alt="newsletter"
+                    />
+                  </button>
+                </div>
+              </form>
+              <!-- Footer Subscriber Form End -->
+            </div>
+            <!-- Footer Widget End -->
+          </div>
+          <!-- Footer Center End -->
+          <div class="h-[1px] w-full bg-[#DBD6CF]"></div>
+          <!-- Footer Bottom -->
+          <div class="py-9 text-center">
+            <p>&copy; All Rights Reserved by Sparkxela</p>
+          </div>
+          <!-- Footer Bottom End -->
+        </div>
+
+        <!-- Footer Background Shape 1 -->
+        <div
+          class="orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]"
+        ></div>
+
+        <!-- Footer Background Shape 2 -->
+        <div
+          class="orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]"
+        ></div>
+      </footer>
+      <!--...::: Footer Section End :::... -->
+    </div>
+
+    <!--Vendor js-->
+    <script src="assets/js/vendors/counterup.js" type="module"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/fslightbox.js"></script>
+    <script src="assets/js/vendors/jos.min.js"></script>
+    <script src="assets/js/vendors/menu.js"></script>
+
+    <!-- Main js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+
+  <!-- Mirrored from azzle.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jun 2024 10:30:40 GMT -->
 </html>
-
-
