@@ -38,6 +38,7 @@
       <header
         class="site-header site-header--absolute is--white py-3"
         id="sticky-menu"
+        style="color: white !important"
       >
         <div class="global-container">
           <div class="flex items-center justify-between gap-x-8">
@@ -70,13 +71,12 @@
                   <div class="mobile-menu-close">&times;</div>
                 </div>
                 <ul class="site-menu-main">
-                 
                   <li class="nav-item nav-item-has-children">
                     <a href="#" class="nav-link-item drop-trigger"
                       >Services
                       <img
                         class="dropdown-icon"
-                        src="assets/img/icon-black-cheveron-right.svg"
+                        src="assets/img/icon-black-cheveron-right.png"
                         alt="cheveron-right"
                         width="16"
                         height="16"
@@ -95,7 +95,7 @@
                       >Pages
                       <img
                         class="dropdown-icon"
-                        src="assets/img/icon-black-cheveron-right.svg"
+                        src="assets/img/icon-black-cheveron-right.png"
                         alt="cheveron-right"
                         width="16"
                         height="16"
@@ -140,13 +140,28 @@
         <!--...::: Breadcrumb Section Start :::... -->
         <section id="section-breadcrumb">
           <!-- Section Spacer -->
-          <div class="breadcrumb-wrapper">
+          <div
+            class="breadcrumb-wrapper"
+            style="
+              background: linear-gradient(
+                to bottom,
+                black,
+                rgb(1, 11, 65)
+              ) !important;
+            "
+          >
             <!-- Section Container -->
             <div class="global-container">
               <div class="breadcrumb-block">
-                <h1 class="breadcrumb-title">Our Portfolio</h1>
+                <h1 class="breadcrumb-title" style="color: white !important">
+                  Our Portfolio
+                </h1>
                 <ul class="breadcrumb-nav">
-                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a href="index.html" style="color: white !important"
+                      >Home</a
+                    >
+                  </li>
                   <li>Our Portfolio</li>
                 </ul>
               </div>
@@ -166,7 +181,7 @@
               <!-- Section Content Block -->
               <div class="jos mb-10 text-center lg:mb-16 xl:mb-20">
                 <div class="mx-auto md:max-w-xs lg:max-w-xl xl:max-w-[746px]">
-                  <h2>Valuable AI projects for new generation</h2>
+                  <h2>Your Vision, Our Expertise</h2>
                 </div>
               </div>
               <!-- Section Content Block -->
@@ -178,9 +193,8 @@
                   class="jos group mb-10 flex flex-col gap-y-6 last:mb-0"
                   data-jos_delay="0.1"
                 >
-                  <a
+                  <div
                     class="block w-full overflow-hidden rounded-[10px] group-odd:h-80 group-even:h-96 lg:group-odd:h-[550px] lg:group-even:h-[750px]"
-                    href="portfolio-details.html"
                   >
                     <img
                       src="assets/img/th-1/portfolio-img-1.jpg"
@@ -189,14 +203,12 @@
                       height="550"
                       class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
                     />
-                  </a>
-                  <a
+                  </div>
+                  <div
                     class="flex items-center justify-between gap-x-6 text-xl font-bold leading-[1.4] hover:text-colorOrangyRed lg:gap-x-14 lg:text-2xl xl:gap-x-20 xl:text-3xl"
-                    href="portfolio-details.html"
                   >
-                    <span class="flex-1"
-                      >Natural language processing models to extract
-                      insights</span
+                    <a class="flex-1" href="http://anjucreation.com/"
+                      >Delivering excellence through technology and creativity.</a
                     >
                     <div class="h-8 w-8 lg:h-[45px] lg:w-[45px]">
                       <img
@@ -206,7 +218,7 @@
                         height="45"
                       />
                     </div>
-                  </a>
+                  </div>
                 </li>
                 <!-- Portfolio Item -->
                 <!-- Portfolio Item -->
@@ -214,9 +226,8 @@
                   class="jos group mb-10 flex flex-col gap-y-6 last:mb-0"
                   data-jos_delay="0.2"
                 >
-                  <a
+                  <div
                     class="block w-full overflow-hidden rounded-[10px] group-odd:h-80 group-even:h-96 lg:group-odd:h-[550px] lg:group-even:h-[750px]"
-                    href="portfolio-details.html"
                   >
                     <img
                       src="assets/img/th-1/portfolio-img-2.jpg"
@@ -225,13 +236,13 @@
                       height="550"
                       class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
                     />
-                  </a>
-                  <a
+                  </div>
+                  <div
                     class="flex items-center justify-between gap-x-6 text-xl font-bold leading-[1.4] hover:text-colorOrangyRed lg:gap-x-14 lg:text-2xl xl:gap-x-20 xl:text-3xl"
                     href="portfolio-details.html"
                   >
-                    <span class="flex-1"
-                      >Create an modern AI-powered educational platform</span
+                    <a class="flex-1" href="https://youngleadersfoundation.org/"
+                      >Crafting digital masterpieces that elevate your business.</a
                     >
                     <div class="h-8 w-8 lg:h-[45px] lg:w-[45px]">
                       <img
@@ -241,7 +252,7 @@
                         height="45"
                       />
                     </div>
-                  </a>
+                  </div>
                 </li>
                 <!-- Portfolio Item -->
                 <!-- Portfolio Item -->
@@ -249,9 +260,8 @@
                   class="jos group mb-10 flex flex-col gap-y-6 last:mb-0"
                   data-jos_delay="0.3"
                 >
-                  <a
+                  <div
                     class="block w-full overflow-hidden rounded-[10px] group-odd:h-80 group-even:h-96 lg:group-odd:h-[550px] lg:group-even:h-[750px]"
-                    href="portfolio-details.html"
                   >
                     <img
                       src="assets/img/th-1/portfolio-img-3.jpg"
@@ -260,14 +270,13 @@
                       height="550"
                       class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
                     />
-                  </a>
-                  <a
+                  </div>
+                  <div
                     class="flex items-center justify-between gap-x-6 text-xl font-bold leading-[1.4] hover:text-colorOrangyRed lg:gap-x-14 lg:text-2xl xl:gap-x-20 xl:text-3xl"
                     href="portfolio-details.html"
                   >
                     <span class="flex-1"
-                      >Develop a content generation system that uses AI
-                      system</span
+                      >Maximizing your digital potential with bespoke web solutions.</span
                     >
                     <div class="h-8 w-8 lg:h-[45px] lg:w-[45px]">
                       <img
@@ -277,7 +286,7 @@
                         height="45"
                       />
                     </div>
-                  </a>
+                  </div>
                 </li>
                 <!-- Portfolio Item -->
                 <!-- Portfolio Item -->
@@ -285,7 +294,7 @@
                   class="jos group mb-10 flex flex-col gap-y-6 last:mb-0"
                   data-jos_delay="0.4"
                 >
-                  <a
+                  <div
                     class="block w-full overflow-hidden rounded-[10px] group-odd:h-80 group-even:h-96 lg:group-odd:h-[550px] lg:group-even:h-[750px]"
                     href="portfolio-details.html"
                   >
@@ -296,13 +305,12 @@
                       height="550"
                       class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
                     />
-                  </a>
-                  <a
+                  </div>
+                  <div
                     class="flex items-center justify-between gap-x-6 text-xl font-bold leading-[1.4] hover:text-colorOrangyRed lg:gap-x-14 lg:text-2xl xl:gap-x-20 xl:text-3xl"
-                    href="portfolio-details.html"
                   >
-                    <span class="flex-1"
-                      >Implement a predictive maintenance system with AI</span
+                    <a class="flex-1" href="http://arshtraders.epizy.com/?i=2"
+                      >Bringing your vision to life with our technical expertise.</a
                     >
                     <div class="h-8 w-8 lg:h-[45px] lg:w-[45px]">
                       <img
@@ -312,7 +320,7 @@
                         height="45"
                       />
                     </div>
-                  </a>
+                  </div>
                 </li>
                 <!-- Portfolio Item -->
                 <!-- Portfolio Item -->
@@ -320,9 +328,8 @@
                   class="jos group mb-10 flex flex-col gap-y-6 last:mb-0"
                   data-jos_delay="0.5"
                 >
-                  <a
+                  <div
                     class="block w-full overflow-hidden rounded-[10px] group-odd:h-80 group-even:h-96 lg:group-odd:h-[550px] lg:group-even:h-[750px]"
-                    href="portfolio-details.html"
                   >
                     <img
                       src="assets/img/th-1/portfolio-img-5.jpg"
@@ -331,13 +338,13 @@
                       height="550"
                       class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
                     />
-                  </a>
-                  <a
+                  </div>
+                  <div
                     class="flex items-center justify-between gap-x-6 text-xl font-bold leading-[1.4] hover:text-colorOrangyRed lg:gap-x-14 lg:text-2xl xl:gap-x-20 xl:text-3xl"
-                    href="portfolio-details.html"
+                    
                   >
-                    <span class="flex-1"
-                      >Build an AI solution for precision agriculture</span
+                    <a class="flex-1" href=""
+                      >Innovative digital solutions tailored to your needs</a
                     >
                     <div class="h-8 w-8 lg:h-[45px] lg:w-[45px]">
                       <img
@@ -347,7 +354,7 @@
                         height="45"
                       />
                     </div>
-                  </a>
+                  </div>
                 </li>
                 <!-- Portfolio Item -->
                 <!-- Portfolio Item -->
@@ -355,9 +362,8 @@
                   class="jos group mb-10 flex flex-col gap-y-6 last:mb-0"
                   data-jos_delay="0.6"
                 >
-                  <a
+                  <div
                     class="block w-full overflow-hidden rounded-[10px] group-odd:h-80 group-even:h-96 lg:group-odd:h-[550px] lg:group-even:h-[750px]"
-                    href="portfolio-details.html"
                   >
                     <img
                       src="assets/img/th-1/portfolio-img-6.jpg"
@@ -366,14 +372,13 @@
                       height="550"
                       class="h-full w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
                     />
-                  </a>
+                  </div>
                   <a
                     class="flex items-center justify-between gap-x-6 text-xl font-bold leading-[1.4] hover:text-colorOrangyRed lg:gap-x-14 lg:text-2xl xl:gap-x-20 xl:text-3xl"
-                    href="portfolio-details.html"
+                    href="http://carbontattoostudio.epizy.com/?i=2"
                   >
-                    <span class="flex-1"
-                      >AI for large corporations and businesses across
-                      industries</span
+                    <a class="flex-1" href="http://carbontattoostudio.epizy.com/?i=1"
+                      >Transforming ideas into impactful digital experiences</a
                     >
                     <div class="h-8 w-8 lg:h-[45px] lg:w-[45px]">
                       <img
@@ -383,7 +388,7 @@
                         height="45"
                       />
                     </div>
-                  </a>
+                  </div>
                 </li>
                 <!-- Portfolio Item -->
               </ul>
@@ -518,7 +523,7 @@
                     >Home</a
                   >
                 </li>
-                
+
                 <li>
                   <a
                     class="transition-all duration-300 ease-linear hover:text-colorOrangyRed"
@@ -555,7 +560,6 @@
                     >Portfolio</a
                   >
                 </li>
-               
               </ul>
               <!-- Footer Navbar End -->
             </div>
